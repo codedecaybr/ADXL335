@@ -4,11 +4,11 @@
 
 Constructor. x, y and z parameters are analog pins connected to ADXL analog output.
 
-# preset()
+## preset()
 
 Calibrate ADXL335 with default values.
 
-# calibrate()
+## calibrate()
 
 Manual calibration. Must be done with all 6 valid positions (y, -y, x, -x, z, -z).
 
