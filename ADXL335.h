@@ -27,7 +27,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 class ADXL335 {
 public:
-  ADXL335(int x, int y, int z);
+  ADXL335(byte x, byte y, byte z);
   ~ADXL335();
   int getRawX();
   int getRawY();
@@ -39,7 +39,8 @@ public:
   void preset();
 private:
   int averageRead(int pin);
-  int xMin, xMax, yMin, yMax, zMin, zMax, pinX, pinY, pinZ, samples;
+  int xMin, xMax, yMin, yMax, zMin, zMax;
+  byte samples, pinX, pinY, pinZ;
 };
 
 #endif
