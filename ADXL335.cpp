@@ -22,7 +22,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "ADXL335.h"
 
-ADXL335::ADXL335(int x, int y, int z) {
+ADXL335::ADXL335(byte x, byte y, byte z) {
   pinX = x; pinY = y; pinZ = z;
   xMin = 512; xMax = 512; yMin = 512; yMax = 512; zMin = 512; zMax = 512;
   samples = 10;
